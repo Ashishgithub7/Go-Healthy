@@ -1,18 +1,58 @@
-nav{
-    border: 1px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Ubuntu:wght@300&display=swap');
+body{
+    font-family: 'roboto';
+}
+
+.nav{
+
+
     display: flex;
     align-items:center;
     justify-content:space-between;
+    background-color: rgb(97, 168, 97);
+    border: 1px ;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
 }
-h1{
-color: green;
+.title{
+    font-family: 'ubuntu' ;
+color: rgb(2, 86, 2);
 }
-ul>li{
+.list{
     display: inline;
     padding-right: 4px;
     font-size: smaller;
 }
-ul>li>a{
+.list :hover{
+    background-color: rgb(44, 183, 44);
+    border: 1px solid;
+    border-spacing: 5rem solid;
+}
+.anchor{
     color: black;
     text-decoration: none;
+}
+/* landing section css */
+.content{
+    text-align: center;
+    padding: 4rem;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+
+}
+.content_subheading{
+    color: green;
+}
+.btn-primary{
+    background-color: green;
+    padding: 10px,20px;
+    color: white;
+    border: none;
+    border-radius: 14px;
+
+}
+.btn-primary:hover{
+    background-color:rgb(0, 224, 0) ;
 }
