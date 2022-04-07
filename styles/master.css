@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100;300&family=Ubuntu:wght@300&display=swap');
 body{
-    font-family: 'roboto';
+    font-family: 'ubuntu';
 }
 
 .nav{
@@ -9,11 +9,11 @@ body{
     display: flex;
     align-items:center;
     justify-content:space-between;
-    background-color: rgb(97, 168, 97);
+    /* background-color: rgb(97, 168, 97);
     border: 1px ;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    
+     */
     
 }
 .title{
@@ -25,11 +25,7 @@ color: rgb(2, 86, 2);
     padding-right: 4px;
     font-size: smaller;
 }
-.list :hover{
-    background-color: rgb(44, 183, 44);
-    border: 1px solid;
-    border-spacing: 5rem solid;
-}
+
 .anchor{
     color: black;
     text-decoration: none;
@@ -37,7 +33,7 @@ color: rgb(2, 86, 2);
 /* landing section css */
 .content{
     text-align: center;
-    padding: 4rem;
+    padding: 6rem;
     background: url(../images/bg.jpg);
     background-size: cover;
 
@@ -53,6 +49,55 @@ color: rgb(2, 86, 2);
     border-radius: 14px;
 
 }
-.btn-primary:hover{
-    background-color:rgb(0, 224, 0) ;
+/* video section  */
+.video_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlighted_text{
+    color: green;
+}
+.video_section{
+    border: 1px solid black;
+    padding: 4rem;
+}
+.recipes{
+    display: flex;
+    align-items: center;
+    
+    justify-content: end;
+   
+}
+.left{
+    display: flex;
+    align-items: left;
+    background: url(../images/recipes.png);
+    background-size: cover;
+    padding: 10rem;
+    width: 500px;
+    
+}
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem 7rem 7rem 1rem;
+     font-size: 90%; 
+     font-family: 'ubuntu';
+   
+}
+.right>h2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.arrow{
+    background: url(../images/arrow.svg);
+    background-size: cover;
+    height: 150px;
+    width: 150px ;
+    display: flex;
+    align-items: left;
+   
 }
