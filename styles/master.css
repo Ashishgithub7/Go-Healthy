@@ -127,7 +127,7 @@ color: #007200;
     align-items: left;
      font-family: 'ubuntu';
      width: 40%;
-     padding-right: 20px;
+     /* padding-right: 20px; */
      height: 300px;
      flex-direction: column;
      color: rgb(117, 115, 115);
