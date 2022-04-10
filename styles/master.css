@@ -4,25 +4,19 @@ body{
 }
 
 .nav{
-
-
+    position: sticky;
     display: flex;
     align-items:center;
     justify-content:space-between;
-    /* background-color: rgb(97, 168, 97);
-    border: 1px ;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-     */
-    
-}
+     background-color: #e3ffc6;
+     }
 .title{
     font-family: 'ubuntu' ;
-color: rgb(2, 86, 2);
+color: #007200;
 }
 .list{
     display: inline;
-    padding-right: 4px;
+    padding-right: 13px;
     font-size: smaller;
 }
 
@@ -30,7 +24,11 @@ color: rgb(2, 86, 2);
     color: black;
     text-decoration: none;
 }
-/* landing section css */
+.anchor:hover{
+   color: #007200;
+   font-weight: bold;
+}
+/* LANDING SECTION CSS */
 .content{
     text-align: center;
     padding: 6rem;
@@ -43,61 +41,113 @@ color: rgb(2, 86, 2);
 }
 .btn-primary{
     background-color: green;
-    padding: 10px,20px;
+    padding: 7px;
     color: white;
     border: none;
     border-radius: 14px;
-
+    font-family: 'ubuntu';
 }
-/* video section  */
+.btn-primary:hover{
+    background-color: #0cab0c;
+}
+                    /* VIDEO SECTION  */
+
 .video_section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.highlighted_text{
-    color: green;
-}
+
 .video_section{
-    border: 1px solid black;
     padding: 4rem;
+    /* border: 1px solid; */
 }
+
+                    /* RECIPES SECTION  */
+                    
 .recipes{
     display: flex;
     align-items: center;
-    
-    justify-content: end;
-   
+    justify-content: space-around;
+    /* border: 1px solid;   */
 }
-.left{
-    display: flex;
-    align-items: left;
+.recipe_picture{
     background: url(../images/recipes.png);
     background-size: cover;
-    padding: 10rem;
+    padding: 15rem 15rem 5rem  0rem ;
+    margin-right: 15px;
     width: 500px;
-    
+     /* border: 1px solid;  */
 }
-.right{
+.recipe_text{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
-    padding: 7rem 7rem 7rem 1rem;
-     font-size: 90%; 
-     font-family: 'ubuntu';
-   
+    padding: 0rem 5rem 5rem 0rem; 
+    color: rgb(117, 115, 115);
+     /* border: 1px solid; */
 }
-.right>h2{
+.recipe_title{
     display: flex;
     flex-direction: column;
     align-items: left;
+    font: 35px;
+    color: black;
+     /* border: 1px solid black;   */
 }
 .arrow{
     background: url(../images/arrow.svg);
     background-size: cover;
     height: 150px;
     width: 150px ;
+    /* border: 1px solid;  */
+}
+                                 /* DEIT PLAN  */
+
+.diet_plan{
     display: flex;
     align-items: left;
-   
+    justify-content: center;
+    height: 500px;
+    margin-top: 50px;
+    /* border: 1px solid;   */
+
 }
+.photo{
+    background: url(../images/mealplan.png);
+    display: flex;
+    background-size: cover;
+    padding: 95px; 
+    height: 10px;
+    width: 130px;  
+    /* border: 1px solid; */
+}
+.text{
+    display: flex;
+    align-items: left;
+     font-family: 'ubuntu';
+     width: 40%;
+     padding-right: 20px;
+     height: 300px;
+     flex-direction: column;
+     color: rgb(117, 115, 115);
+     /* border: 1px solid; */
+}
+.diet_title{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px; 
+    color: black;
+    /* border: 1px solid;   */
+}
+.text>p{
+    /* border: 1px solid black; */
+}
+.right_arrow{
+    align-items: right;
+    background: url(../images/arrow-right.svg);
+    background-size: cover;
+    height: 200px;
+    width: 120px;
+    }
