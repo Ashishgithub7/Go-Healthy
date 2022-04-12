@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100;300&family=Ubuntu:wght@300&display=swap');
 body{
     font-family: 'ubuntu';
+    /* position: relative; */
 }
 
 .nav{
-    position: sticky;
+    position: sticky ;
     display: flex;
     align-items:center;
     justify-content:space-between;
@@ -28,13 +29,15 @@ color: #007200;
    color: #007200;
    font-weight: bold;
 }
-/* LANDING SECTION CSS */
+
+                            /* LANDING SECTION CSS */
+
 .content{
     text-align: center;
     padding: 6rem;
     background: url(../images/bg.jpg);
     background-size: cover;
-
+    
 }
 .content_subheading{
     color: green;
@@ -49,8 +52,11 @@ color: #007200;
 }
 .btn-primary:hover{
     background-color: #0cab0c;
+    box-shadow: 1px 1px 1px #92da4a;
 }
-                    /* VIDEO SECTION  */
+
+                            /* VIDEO SECTION  */
+
 
 .video_section{
     display: flex;
@@ -63,12 +69,13 @@ color: #007200;
     /* border: 1px solid; */
 }
 
-                    /* RECIPES SECTION  */
+                             /* RECIPES SECTION  */
                     
 .recipes{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 70px;
     /* border: 1px solid;   */
 }
 .recipe_picture{
@@ -102,14 +109,17 @@ color: #007200;
     width: 150px ;
     /* border: 1px solid;  */
 }
+
                                  /* DEIT PLAN  */
+
 
 .diet_plan{
     display: flex;
     align-items: left;
     justify-content: center;
-    height: 500px;
+    height: 300px;
     margin-top: 50px;
+    margin-bottom: 0px;
     /* border: 1px solid;   */
 
 }
@@ -151,3 +161,244 @@ color: #007200;
     height: 200px;
     width: 120px;
     }
+
+                                        /* GROCERY */
+
+    .grocery{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 70px;
+        margin-top: 0px;
+        padding-bottom: -35px;
+        /* border: 1px solid;   */
+    }
+    .grocery_picture{
+        background: url(../images/tomato.png);
+        background-size: cover;
+        padding: 10rem 20rem 5rem  0rem ;
+        margin-right: 10px;
+        width: 500px;
+         /* border: 1px solid;  */
+    }
+    .grocery_text{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        padding: 0rem 5rem 5rem 0rem; 
+        color: rgb(117, 115, 115);
+         /* border: 1px solid; */
+    }
+    .grocery_title{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font: 35px;
+        color: black;
+        margin-bottom: 0px;
+         /* border: 1px solid black;   */
+    }
+    .arrow{
+        background: url(../images/arrow.svg);
+        background-size: cover;
+        height: 150px;
+        width: 150px ;
+        /* border: 1px solid;  */
+    }
+
+                                        /* GRID  */
+
+    .grid{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        /* border: 1px solid; */
+    }
+    .plan{
+        display: flex;
+        align-items: left;
+        flex-direction:row;
+        /* padding: 5rem; */
+        padding-right: 150px;
+        padding-left: 100px;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+    }
+    .plan_text{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 350px;
+        /* border: 1px solid blue; */
+        
+       
+    }
+    .icecream{
+        background: url(../images/sign_in_background2.jpg);
+        background-size: cover;
+    }
+    .plan_text>button{
+        margin-left: 55px;
+        padding: 5px 0px ;
+    }
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+        margin-left: 100px;
+        /* bottom: -40px;
+        left: -10px;
+        border: 1px solid; */
+    }
+    .photos>div>button{
+        /* size: 10px; */
+        background-color: white;
+        color: #007200;
+        border-radius: 14px;
+        /* margin-bottom: 10px; */
+        border: none;
+        /* position: absolute; */
+        bottom: -50px;
+        left: -10px;
+        border: 1px solid;
+    }
+    .photos>div>button:hover{
+        color:green;
+    }
+    .photos>div>img{
+       border-radius: 10%;
+       border: 100px;
+       box-shadow: 5px 5px 5px rgb(216, 216, 216) ;
+    }
+    .plan>div>p{
+        color:  rgb(117, 115, 115);
+    }
+    .plan>div>img{
+        border: 1px ;
+        padding: 10rem;
+    }
+
+                                    /* FEATURED RECIPES  */
+
+    .iloveu{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 15px;
+        padding: 10px;
+        /* border: 1px solid ; */
+    }
+    .feature_recipe{
+        margin-top: 70px;
+    }
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 3px  rgb(98, 98, 98);
+    /* border: 1px solid; */
+}
+.main>p{
+    color: #007200;
+}
+.main>h6{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        border-top: 0.5px solid;
+        padding: 0% 24.5%;
+        margin-bottom: 0px;
+        background-color: rgb(237, 237, 237);
+}
+
+                                            /* SIGN IN SECTION  */                                                 
+.sign_in{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.question>h1{
+    margin-bottom: 0px;
+    /* border: 1px solid; */
+}
+                /* QUESTION 1 */
+.header1{
+    margin-bottom: 0px;
+}
+.header2{
+    margin-top: 0px;
+}
+.plate_background{
+    margin-top: 50px;
+}    
+.healthy_meaning{
+   font-size: 0.36cm;
+    padding: 0px 210px ;
+}
+.first_question{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+}
+.left1{
+    margin: 40px 40px 40px 180px;
+    /* border: 1px solid; */
+}
+.right1{
+    padding:30px 180px 0px 40px;
+    height: 200px;
+    padding-top: 30px;
+    /* border: 1px solid; */
+}
+.right1>p{
+    font-size: 0.3cm;
+}
+            /* QUESTION 2 */
+.second_question{
+display: flex;
+flex-direction: row;
+/* border: 1px solid; */
+}
+.left2{
+    padding: 30px 120px 0px 170px;
+    /* border: 1px solid; */
+}
+.left2>p{
+    font-size: 0.3cm;
+}
+.right2{
+    margin-right: 180px;
+}
+            /* QUESTION 3 */
+.third_question{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+}            
+.left3{
+    margin: 40px 40px 40px 180px;
+    /* border: 1px solid; */
+}
+.right3{
+    padding:30px 180px 0px 40px;
+    height: 200px;
+    /* border: 1px solid; */
+    padding-top: 30px;
+}
+.right3>p{
+    font-size: 0.3cm;
+}
+            /* sign up */
+.sign_up_btn{
+    background-color: green;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 29px;
+    font-family: 'ubuntu';
+}            
+.sign_up_btn:hover{
+    background-color: #0cab0c;
+    box-shadow: 1px 1px 1px #92da4a;
+}

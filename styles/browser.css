@@ -1,0 +1,7 @@
+.image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.h1{
+    color: red;
+}
