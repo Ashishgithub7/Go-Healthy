@@ -51,7 +51,7 @@ color: #007200;
     font-family: 'ubuntu';
 }
 .btn-primary:hover{
-    background-color: #0cab0c;
+    background-color: #0bac0b;
     box-shadow: 1px 1px 1px #92da4a;
 }
 
@@ -229,7 +229,7 @@ color: #007200;
         display: flex;
         align-items: left;
         flex-direction: column;
-        margin-left: 0px;
+        padding-left: 0px 20px;
         width: 350px;
         /* border: 1px solid blue; */
         
@@ -246,39 +246,37 @@ color: #007200;
     .photos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        column-gap: 10px;
+        column-gap: 15px;
+        row-gap: 10px;
         margin-left: 100px;
-        /* bottom: -40px;
-        left: -10px;
-        border: 1px solid; */
-    }
-    .photos>div>button{
-        /* size: 10px; */
-        background-color: white;
-        color: #007200;
-        border-radius: 14px;
-        /* margin-bottom: 10px; */
-        border: none;
-        /* position: absolute; */
-        bottom: -50px;
-        left: -10px;
-        border: 1px solid;
-    }
-    .photos>div>button:hover{
-        color:green;
+        /* border: 1px solid;  */
     }
     .photos>div>img{
        border-radius: 10%;
-       border: 100px;
+       border: 1px solid white;
        box-shadow: 5px 5px 5px rgb(216, 216, 216) ;
     }
-    .plan>div>p{
+    .plan_text>p{
         color:  rgb(117, 115, 115);
+        font-size: small;
     }
-    .plan>div>img{
-        border: 1px ;
-        padding: 10rem;
+    .item{
+        position: relative;
     }
+    .name-tag{
+        border: 1px solid #dee2e6;
+        border-radius: 1rem;
+        background-color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 9px;
+        color: #6dda2f;
+        position: absolute;
+        top: 90px;
+        left: -10px;
+        /* box-shadow: 2px 2px 2px ; */
+    }
+
 
                                     /* FEATURED RECIPES  */
 
@@ -321,6 +319,9 @@ color: #007200;
 .question>h1{
     margin-bottom: 0px;
     /* border: 1px solid; */
+}
+.even-mean{
+    margin-top: 0px;
 }
                 /* QUESTION 1 */
 .header1{
